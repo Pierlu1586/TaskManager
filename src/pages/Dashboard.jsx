@@ -23,7 +23,7 @@ function Dashboard({ activities }) {
       <Header
         titolo={nomePagina}
         descrizione="Panoramica delle tue attività"
-        utente="Pierluigi"
+        utente="Pierluigi M."
       />
       <Welcome />
     <div className="statsGrid">
