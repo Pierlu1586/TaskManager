@@ -1,0 +1,143 @@
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.task-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.task-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.task-card-header h3 {
+  margin: 0;
+}
+
+.task-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.active {
+  color: blue;
+  font-weight: bold;
+}
+
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #1e293b;
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 30px;
+
+  border-right: 1px solid #334155;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: #e2e8f0;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar a:hover {
+  background-color: #334155;
+}
+
+.sidebar a.active {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: bold;
+}
+
+.main-content {
+  flex: 1;
+  background-color: #f1f5f9;
+  padding: 30px;
+}
+
+.statsGrid {
+  display: flex;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.statCard {
+  flex: 1;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.statCard h3 {
+  margin-top: 0;
+  color: #334155;
+}
+
+.statCard p {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0f172a;
+  margin-bottom: 0;
+}
+
+.statusBadge {
+  background-color: #334155;
+  color: #ddd;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.task-card-priority-status {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .statsGrid {
+    flex-direction: column;
+  }
+
+  .app-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}
